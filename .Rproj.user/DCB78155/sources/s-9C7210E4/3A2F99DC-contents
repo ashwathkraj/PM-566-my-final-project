@@ -1,18 +1,9 @@
 ---
-title: "PM566 Final Project"
+title: "PM 566 Midterm: Changes and Stability in Global Happiness"
 author: "Ashwath Raj"
-output: 
-    html_document:
-        toc: TRUE
-        toc_float: TRUE
+date: "October 8, 2020"
+output: html_document
 ---
-
-#Introduction:
-  At the United Nations' event celebrating the International Day of Happiness on March 20, 2012, the first World Happiness Report was released. TED talks, conferences, fields of study, and decades of research are dedicated to the question "What makes us happy?" The report aimed to answer that question through "happiness indicators".
-  The researchers behind the report used data from the Gallup World Poll and answers to the Cantril ladder question (https://news.gallup.com/poll/122453/understanding-gallup-uses-cantril-scale.aspx), which are measurements of a respondent's imagined best (10) to worst (0) possible lives and where their lives fall on that scale. This score is broken into six factors: "economic production, social support, life expectancy, freedom, absence of corruption, and generosity". 
-  
-####I want to examine how scores change year over year. My question is: 
-####Which indicators are responsible for the largest changes in Happiness Score between 2018 and 2019?
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -26,6 +17,13 @@ library(dtplyr)
 library(data.table)
 library(corrplot)
 ```
+
+#Introduction:
+  At the United Nations' event celebrating the International Day of Happiness on March 20, 2012, the first World Happiness Report was released. TED talks, conferences, fields of study, and decades of research are dedicated to the question "What makes us happy?" The report aimed to answer that question through "happiness indicators".
+  The researchers behind the report used data from the Gallup World Poll and answers to the Cantril ladder question (https://news.gallup.com/poll/122453/understanding-gallup-uses-cantril-scale.aspx), which are measurements of a respondent's imagined best (10) to worst (0) possible lives and where their lives fall on that scale. This score is broken into six factors: "economic production, social support, life expectancy, freedom, absence of corruption, and generosity". 
+  
+####I want to examine how scores change year over year. My question is: 
+####Which indicators are responsible for the largest changes in Happiness Score between 2018 and 2019?
 
   
 ```{r results = "hide"}
