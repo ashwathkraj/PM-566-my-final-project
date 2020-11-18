@@ -369,12 +369,6 @@ div.tocify {
 </div>
 
 
-<p>This is my PM566 Final Project website.</p>
-<pre class="r"><code>library(tidyverse)
-library(readr)
-library(dtplyr)
-library(data.table)
-library(corrplot)</code></pre>
 <div id="introduction" class="section level1">
 <h1>Introduction:</h1>
 <p>At the United Nations' event celebrating the International Day of Happiness on March 20, 2012, the first World Happiness Report was released. TED talks, conferences, fields of study, and decades of research are dedicated to the question &quot;What makes us happy?&quot; The report aimed to answer that question through &quot;happiness indicators&quot;. The researchers behind the report used data from the Gallup World Poll and answers to the Cantril ladder question (<a href="https://news.gallup.com/poll/122453/understanding-gallup-uses-cantril-scale.aspx" class="uri">https://news.gallup.com/poll/122453/understanding-gallup-uses-cantril-scale.aspx</a>), which are measurements of a respondent's imagined best (10) to worst (0) possible lives and where their lives fall on that scale. This score is broken into six factors: &quot;economic production, social support, life expectancy, freedom, absence of corruption, and generosity&quot;.</p>
@@ -383,6 +377,11 @@ library(corrplot)</code></pre>
 </div>
 <div id="which-indicators-are-responsible-for-the-largest-changes-in-happiness-score-between-2018-and-2019" class="section level4">
 <h4>Which indicators are responsible for the largest changes in Happiness Score between 2018 and 2019?</h4>
+<pre class="r"><code>library(tidyverse)
+library(readr)
+library(dtplyr)
+library(data.table)
+library(corrplot)</code></pre>
 <pre class="r"><code>year1 &lt;- fread(&quot;2018.csv&quot;)
 year2 &lt;- fread(&quot;2019.csv&quot;)</code></pre>
 </div>
