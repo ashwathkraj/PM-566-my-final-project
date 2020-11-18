@@ -1,0 +1,9 @@
+name: "Happiness Report Analysis Website"
+navbar:
+  title: "Happiness Report Analysis"
+  left:
+    - text: "Home"
+      href: index.html
+output:
+  html_document:
+    theme: cosmo
